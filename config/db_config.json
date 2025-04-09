@@ -1,0 +1,6 @@
+{
+    "mongodb_uri": "mongodb+srv://rayyanned_db1:rayyan123@cluster-ned.3frsh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-NED",
+    "api_keys": {
+        "marketstack": "580c67effd676378137d18d392f35603"
+    }
+}
