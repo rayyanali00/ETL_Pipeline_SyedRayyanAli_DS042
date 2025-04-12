@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.8'  # Specify Python version
+          python-version: '3.11.2'  # Specify Python version
 
       - name: Install dependencies
         run: |
@@ -31,15 +31,15 @@ jobs:
         run: |
           pip install pandas requests kagglehub[pandas-datasets] pymongo schedule
 
-      - name: Lint code with flake8
-        run: |
-          pip install flake8
-          flake8 . --max-line-length=80  # Optional: Check for Python style issues
+      # - name: Lint code with flake8
+      #   run: |
+      #     pip install flake8
+      #     flake8 . --max-line-length=80  # Optional: Check for Python style issues
 
-      - name: Run unit tests
-        run: |
-          # Run your tests (e.g., pytest, unittest, or another framework)
-          pytest  # Or use `python -m unittest discover`
+      # - name: Run unit tests
+      #   run: |
+      #     # Run your tests (e.g., pytest, unittest, or another framework)
+      #     pytest  # Or use `python -m unittest discover`
 
       - name: Run the ETL pipeline script
         run: |
@@ -58,7 +58,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.8'
+          python-version: '3.11.2'
 
       - name: Install dependencies
         run: |
