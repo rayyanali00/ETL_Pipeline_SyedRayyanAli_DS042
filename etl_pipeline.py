@@ -70,7 +70,7 @@ class ETLPipeline:
       Connector #3
       Load stock data from local CSV dataset.
       """
-      df = pd.read_csv("filtered_2024_stock_data.csv")
+      df = pd.read_csv("data/filtered_2024_stock_data.csv")
       return df
 
     def get_data_from_mongodb(self):
